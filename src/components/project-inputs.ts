@@ -1,8 +1,8 @@
-/// <reference path="base-components.ts"/>
-/// <reference path = "../util/validation.ts"/>
-/// <reference path = "../state/project-state.ts"/>
+import { Component } from './base-components.js'  ;
+import { Validable } from '../util/validation.js';
+import { validate } from '../util/validation.js';
+import { projectState } from '../state/project-state.js';
 
-namespace App {
     export class ProjectInput  extends Component <HTMLDivElement , HTMLFormElement >{
         titleInputElement: HTMLInputElement;
         descriptionInputElement: HTMLInputElement;
@@ -83,4 +83,3 @@ namespace App {
         }
       
       }
-}

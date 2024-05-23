@@ -1,7 +1,5 @@
-/// <reference path = "components/project-inputs.ts"/>
-/// <reference path = "components/project-list.ts"/>
-
-namespace App{
+import { ProjectInput } from "./components/project-inputs.js";
+import { ProjectList } from "./components/project-list.js";
   // autobind decorator
 // function autobind(
 //   _: any,
@@ -23,5 +21,5 @@ namespace App{
 new ProjectInput();
  new ProjectList("active");
  new ProjectList("finished");
-}
+
 

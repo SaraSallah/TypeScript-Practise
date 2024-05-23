@@ -1,9 +1,9 @@
-/// <reference path="base-components.ts"/>
-/// <reference path = "../models/drag-drop.ts"/>
-/// <reference path = "../models/project-model.ts"/>
-
-
-namespace App {
+  import { Component } from "./base-components.js";
+  import { DragTarget } from "../models/drag-drop.js";
+  import { Project } from "../models/project-model.js";
+  import { ProjectItem } from "./project-item.js";
+  import { ProjectStatus } from "../models/project-model.js";
+  import { projectState } from "../state/project-state.js";
   // ProjectList CLass
   export class ProjectList
     extends Component<HTMLDivElement, HTMLElement>
@@ -78,4 +78,4 @@ namespace App {
         this.type.toUpperCase() + " PROJECTS";
     }
   }
-}
+
